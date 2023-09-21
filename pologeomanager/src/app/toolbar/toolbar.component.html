@@ -1,0 +1,33 @@
+<mat-toolbar>
+
+
+  <button mat-button (click)="buttonEvent()">
+
+    <mat-icon> menu</mat-icon>
+  </button>
+
+
+
+
+
+  <span class="spacer"></span>
+
+  <button mat-button *ngIf="!show2" (click)="openLogin()">
+  Login
+  </button>
+
+
+  <button mat-button *ngIf="show2">
+    <mat-icon>person</mat-icon>
+
+  </button>
+  <button mat-button *ngIf="show2 && mobile">
+    <mat-icon>logout</mat-icon>
+  </button>
+
+  <button mat-button *ngIf="show2 && mobile">
+    <mat-icon>report</mat-icon>
+  </button>
+
+
+</mat-toolbar>

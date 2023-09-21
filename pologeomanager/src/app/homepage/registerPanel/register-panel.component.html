@@ -1,0 +1,37 @@
+<h1>Registrati</h1>
+
+<div mat-dialog-content>
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+    <mat-button-toggle-group name="account" formControlName="account" (click)="showMsg()">
+      <mat-button-toggle value="ADMIN">Account Admin</mat-button-toggle>
+      <mat-button-toggle value="USER">Account Explorer</mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <p>{{msg}}</p>
+
+    <mat-form-field>
+      <mat-label>Username</mat-label>
+      <input matInput type="email" name="username" formControlName="username">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput type="email" name="email" formControlName="email" placeholder="Ex. pat@example.com">
+    </mat-form-field>
+
+
+    <mat-form-field appearance="fill">
+      <mat-label>password</mat-label>
+      <input matInput type="password" nome="password" formControlName="password" />
+
+
+    </mat-form-field>
+
+
+    <button mat-button type="submit" [disabled]="!registerForm.valid">Registrati</button>
+
+    <p>{{msgError}}</p>
+
+  </form>
+</div>

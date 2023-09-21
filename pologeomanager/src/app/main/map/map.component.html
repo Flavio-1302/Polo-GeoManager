@@ -1,0 +1,15 @@
+<div class="searchbox">
+  <form (ngSubmit)="onSubmit(searchbar)" #searchbar="ngForm">
+      <input matInput placeholder="Search" name="place" ngModel >
+      <button mat-button class="searchButton" type="submit" >
+        <mat-icon>search</mat-icon>
+    </button>
+  </form>
+</div>
+
+<div class="search-container">
+
+  <div class="search-frame">
+    <div id="search"></div>
+  </div>
+</div>

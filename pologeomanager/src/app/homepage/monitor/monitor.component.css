@@ -1,0 +1,65 @@
+.background{
+  display: flex;
+  height: 30vh;
+  padding: 0 5vw;
+
+}
+.monitor{
+  font: 15pt roboto;
+  text-align: center;
+
+  position:relative;
+  height: 30vh;
+  width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vh;
+
+
+}
+
+.box{
+  height: 25vh;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.878);
+  border-radius: 50px;
+  margin: 20% 10% 10% 10%;
+  padding: 35px;
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  font: 15pt roboto;
+  justify-content: center;
+  align-items: center;
+
+}
+p{
+  font-size: 17pt;
+
+}
+
+ .register,.consult{
+  background-color: red;
+  font-size: 14pt;
+  height: 8vh;
+  width: 15vh ;
+
+ }
+ .register{
+  margin-right:10px;
+ }
+ .consult{
+  margin-left:10px;
+ }
+
+
+ span{
+color: white;
+
+}
+
+
+
+
+
+

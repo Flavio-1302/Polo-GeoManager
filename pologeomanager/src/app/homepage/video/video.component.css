@@ -1,0 +1,38 @@
+
+.presentation{
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  margin-top: 30vh;
+  padding-bottom: 15vh;
+  justify-content: center;
+  align-items: center;
+
+}
+
+ video{
+  height: 70vh;
+  width: auto;
+  margin-left: 5vw;
+  position: relative;
+
+}
+
+ .text{
+  font: 15pt roboto;
+  text-align: center;
+  height: 20vh;
+  width: 35vw;
+  position:relative;
+
+
+}
+
+a{
+  text-decoration:none;
+}
+
+img
+{
+  margin-left: 10px;
+}

@@ -1,0 +1,42 @@
+<app-toolbar (buttonClick)="onButtonClick()"></app-toolbar>
+<mat-sidenav-container class="example-container" hasBackdrop="false">
+  <mat-sidenav #sidenav mode="over" >
+
+
+    <div class="tools">
+
+    <button mat-button routerLink="/search"(click)="sidenav.close()">
+      <mat-icon>search</mat-icon>Cerca
+    </button>
+
+    <button mat-button routerLink="/suggest"(click)="sidenav.close()">
+      <mat-icon>directions_car</mat-icon>Suggerimenti
+    </button>
+
+    <button mat-button>
+      <mat-icon>near_me</mat-icon>Ispirami
+    </button>
+
+    <button mat-button routerLink="/plan"(click)="sidenav.close()">
+      <mat-icon>map</mat-icon>Pianifica
+    </button>
+
+    <span class="spacer"></span>
+    <button mat-button style="justify-content: center;" (click)="sidenav.close()">Info sul progetto</button>
+
+
+    </div>
+
+
+  </mat-sidenav>
+  <mat-sidenav-content (click)="sidenav.close()">
+
+    <router-outlet></router-outlet>
+
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+

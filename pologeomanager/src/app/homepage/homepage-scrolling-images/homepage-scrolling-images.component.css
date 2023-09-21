@@ -1,0 +1,65 @@
+
+   figure{
+    width: 700vw;
+    margin: 0;
+    animation: 50s slider infinite;
+    position:relative;
+
+  }
+   figure img{
+    width: 100vw;
+    height: 80vh;
+    max-height: 90%;
+    float: left;
+    object-fit:cover;
+
+
+  }
+
+
+
+
+  @keyframes slider {
+    0% {
+      left: 0;
+    }
+    12.5% {
+      left: 0;
+    }
+    15% {
+      left: -100vw;
+    }
+    27.5% {
+      left: -100vw;
+    }
+    30% {
+      left: -200vw;
+    }
+    42.5% {
+      left: -200vw;
+    }
+    45% {
+      left: -300vw;
+    }
+    57.5% {
+      left: -300vw;
+    }
+    60% {
+      left: -400vw;
+    }
+    72.5% {
+      left: -400vw;
+    }
+    75% {
+      left: -500vw;
+    }
+    87.5% {
+      left: -500vw;
+    }
+    90% {
+      left: -600vw;
+    }
+    100% {
+      left: -600vw;
+    }
+  }

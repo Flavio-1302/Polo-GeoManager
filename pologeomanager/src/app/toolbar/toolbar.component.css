@@ -1,0 +1,12 @@
+.mat-toolbar{
+  background-color: red;
+  z-index: 3;
+  height: 7vh;
+}
+
+
+.spacer{
+  flex: 1 1 auto;
+}
+
+
